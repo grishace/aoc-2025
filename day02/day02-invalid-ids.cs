@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 
-var lines = await File.ReadAllLinesAsync("C:/Users/grishace/source/repos/aoc-2025/day02/input.sdx");
+var lines = await File.ReadAllLinesAsync("./input.sdx");
 var rangeStr = lines.FirstOrDefault(String.Empty);
 
 var ranges = rangeStr.Split(',')
@@ -36,10 +36,8 @@ bool IsInvalidNumberPart2(ulong number)
 {
   var str = number.ToString();
   for (var chunk = 1; chunk <= str.Length/2; chunk++)
-  {
     if (str.Chunk(chunk).Select(ch => new String(ch)).ToHashSet().Count == 1)
       return true;
-  }
 
   return false;
 }
