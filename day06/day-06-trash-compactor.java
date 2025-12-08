@@ -1,8 +1,10 @@
+package day06;
+
 import java.io.*;
 import java.util.*;
 import java.lang.Math;
 
-public final class Day06 {
+final class Day06 {
 
     public static void main(String[] args) {
 
